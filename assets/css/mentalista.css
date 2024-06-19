@@ -1,0 +1,140 @@
+body {
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png"), url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background_mentalista.png");
+    background-size: 500px, cover;
+    background-position: center, center top;
+}
+
+main{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+label, p, .input-number, .button {
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+label, p{
+    width: 90%;
+}
+
+.input-number{
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #01B869;
+}
+
+.input-number:focus{
+    outline: none;
+}
+
+.button {
+    font-weight: 600;
+    padding: 6px 12px;
+    background-color: #05884f;
+    border-radius: 5px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #01B869;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        height: 72%;
+    }
+    
+    .card{
+        width: 55%;
+        /* height: 35%; */
+    }
+    
+    label, p, .input-number, .button { 
+        font-size: 22px;
+        line-height: 24px;
+    }
+    
+    /* label, p{
+        width: 90%;
+    } */
+    
+    .input-number{
+        padding: 8px;
+        /* border-radius: 5px;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #01B869; */
+    }
+      
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main{
+        flex-direction: row;
+        /* justify-content: space-around;
+        align-items: center; */
+    }
+    
+    .card{
+        width: 30%;
+        height: 55%;
+    }
+    
+    label, p, .input-number, .button { 
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    /* label, p{
+        width: 90%;
+    } */
+    
+    .input-number{
+        padding: 8px;
+        /* border-radius: 5px;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #01B869; */
+    }
+    
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 768px) and (max-width: 1024px){
+    main{
+        flex-direction: row;
+    }
+
+    .card{
+        width: 35%;
+        height: 60%;
+    }
+}

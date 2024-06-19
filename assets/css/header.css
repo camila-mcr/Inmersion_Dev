@@ -1,0 +1,73 @@
+header {
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.alura-latam-logo {
+    padding: 8px;
+    width: 40px;
+}
+
+.container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: calc(100% - 48px);
+}
+
+.page-title {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.page-logo {
+    max-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 22%;
+    }
+    
+    .page-title {
+        font-size: 38px;
+        line-height: 40px;
+    }
+    
+    .page-logo {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 22%;
+    }
+
+    .alura-latam-logo {
+        padding: 6px;
+        width: 32px;
+    }
+    
+    .container {
+        gap: 8px;
+        height: calc(100% - 40px);
+    }
+    
+    .page-title {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    
+    .page-logo {
+        max-width: 200px;
+    }
+}

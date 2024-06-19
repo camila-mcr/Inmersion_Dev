@@ -1,0 +1,254 @@
+body {
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title > span{
+  font-size: 18px;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.form__section{
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+}
+
+.form__title {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+  
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.form__wrapper > input, button{
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.form__wrapper input {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #01B869;
+}
+
+input:focus{
+  outline: none;
+}
+
+.form__wrapper button {
+  background-color: #05884f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  
+.form__wrapper button:hover {
+  opacity: 0.8;
+}
+
+.series__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: calc((8px + calc(42vw*1.5) + 40px + 6px)*1.1);
+  /*series_container padding, series_poster height hover, p height, p padding*/
+  justify-items: center;
+  align-items: center;
+}
+
+.series__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 5px;
+  width: min-content;
+  height: max-content; 
+}
+
+.series__container:hover > .series__poster{
+  width: 42vw;
+  height: calc(42vw*1.5);
+}
+
+.series__poster {
+  width: 40vw;
+  height: calc(40vw*1.5);
+  object-fit: cover;
+}
+
+.series__container p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  height: 40px; 
+  align-content: center;
+  padding: 6px 0;
+}
+
+.delete {
+  position: absolute;
+  color: #ffffff;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  margin: 1px;
+}
+
+.delete:hover {
+  color: #01B869;
+  cursor: pointer;
+}
+
+.footer{
+  padding: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .form__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+    
+  .form__wrapper {
+    gap: 16px;
+  }
+  
+  .form__wrapper > input, button{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .form__wrapper input {
+    width: 50%;
+  }
+
+  .series__section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: calc((8px + calc(28vw*1.5) + 50px + 12px)*1.1);
+    /*series_container padding, series_poster height hover, p height, p padding*/
+  }
+  
+  .series__container:hover > .series__poster{
+    width: 28vw;
+    height: calc(28vw*1.5);
+  }
+  
+  .series__poster {
+    width: 26vw;
+    height: calc(26vw*1.5);
+  }
+  
+  .series__container p {  
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px; 
+    padding: 12px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .form__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .form__wrapper > input, button{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .form__wrapper input {
+    width: 35%;
+  }
+
+  .series__section {
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: calc((8px + calc(16vw*1.5) + 50px + 12px)*1.1);
+    /*series_container padding, series_poster height hover, p height, p padding*/
+  }
+  
+  .series__container:hover > .series__poster{
+    width: 16vw;
+    height: calc(16vw*1.5);
+  }
+  
+  .series__poster {
+    width: 15vw;
+    height: calc(15vw*1.5);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 768px) and (max-width: 1024px){
+  .form__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+    
+  .form__wrapper {
+    gap: 16px;
+  }
+  
+  .form__wrapper > input, button{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .form__wrapper input {
+    width: 40%;
+  }
+
+  .series__section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: calc((8px + calc(20vw*1.5) + 50px + 12px)*1.1);
+    /*series_container padding, series_poster height hover, p height, p padding*/
+  }
+  
+  .series__container:hover > .series__poster{
+    width: 20vw;
+    height: calc(20vw*1.5);
+  }
+  
+  .series__poster {
+    width: 19vw;
+    height: calc(19vw*1.5);
+  }
+  
+  .series__container p {  
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px; 
+    padding: 12px 0;
+  }
+}

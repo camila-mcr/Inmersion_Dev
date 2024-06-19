@@ -1,0 +1,56 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #00000066;
+    width: 100vw;
+    height: 6%;
+    /* position: relative;
+    bottom: 0px; */
+   
+}
+
+h4{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}   
+
+.github-logo{
+    width: 20px;
+    height: 20px;
+}
+
+.github-logo path{
+    fill: #ffffff;
+}
+
+.github-logo:hover path{
+    fill: #01B869;
+}
+
+@media screen and (min-width: 768px) {
+    h4{
+        font-size: 16px;
+        line-height: 20px;
+    }   
+    
+    .github-logo{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h4{
+        font-size: 14px;
+        line-height: 16px;
+    }   
+    
+    .github-logo{
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,178 @@
+body {
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+    background-size: cover;
+    background-position: center top;
+    /* overflow-y: hidden; */
+}
+
+main {
+    height: 70%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conversor-img {
+    max-height: 200px;
+}
+
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input, select{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    border-radius: 5px;
+    color: rgb(48, 48, 48);
+    padding: 4px 0;
+}
+
+.input:focus, select:focus{
+    outline: none;
+}
+
+.input{
+    font-size: 14px;
+    line-height: 16px;
+    width: 30%;
+    text-align: center;
+}
+
+select{
+    font-size: 12px;
+    line-height: 14px;   
+}
+
+.arrow-img{
+    width: 24px;
+    height: 24px;
+}
+
+.button{
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #05884f;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #01B869;
+}
+
+.result-section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#result_currency, #result_bitcoin{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 30%;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 72%;
+        margin: 0 5%;
+    }
+    
+    .conversor-img {
+        max-height: 300px;
+    }
+    
+    .input{
+        font-size: 24px;
+        line-height: 26px;   
+    }
+    
+    select{
+        font-size: 20px;
+        line-height: 22px;   
+    }
+
+    .arrow-img{
+        width: 36px;
+        height: 36px;
+    }
+    
+    .button{
+        font-size: 28px;
+        line-height: 30px;
+        padding: 8px 30px;
+    }
+    
+    #result_currency, #result_bitcoin{
+        width: 30%;
+        padding: 16px 20px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conversor-img {
+        max-height: 250px;
+    }
+
+    .input-section{
+        width: 50%;
+    }
+    
+    .input{
+        font-size: 16px;
+        line-height: 18px;   
+    }
+    
+    select{
+        font-size: 14px;
+        line-height: 16px;   
+    }
+
+    .arrow-img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .button{
+        font-size: 18px;
+        line-height: 22px;
+        padding: 8px 20px;
+    }
+
+    .result-section{
+        width: 50%;
+    }
+    
+    #result_currency, #result_bitcoin{
+        padding: 12px 16px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+/* @media screen and (orientation: landscape) and (max-height: 768px) and (max-width: 1024px){
+    body{
+        height: 100vw;
+    }
+} */
+
